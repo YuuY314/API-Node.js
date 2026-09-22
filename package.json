@@ -1,0 +1,20 @@
+{
+  "name": "api-produtos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js .env listar",
+    "buscar": "node app.js .env buscar 1",
+    "categorias": "node app.js .env categorias",
+    "check": "node scripts/check.js",
+    "produto-ausente": "node app.js .env buscar 999",
+    "id-invalido": "node app.js .env buscar abc",
+    "diagnostico": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private": true,
+  "type": "module"
+}

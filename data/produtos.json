@@ -1,0 +1,359 @@
+[
+  {
+    "id": 1,
+    "nome": "Teclado",
+    "preco": 99.9,
+    "estoque": 4,
+    "categoria": "Periféricos"
+  },
+  {
+    "id": 2,
+    "nome": "Mouse",
+    "preco": 59.9,
+    "estoque": 12,
+    "categoria": "Periféricos"
+  },
+  {
+    "id": 3,
+    "nome": "Monitor 24\"",
+    "preco": 799.9,
+    "estoque": 6,
+    "categoria": "Monitores"
+  },
+  {
+    "id": 4,
+    "nome": "Headset",
+    "preco": 149.9,
+    "estoque": 8,
+    "categoria": "Áudio"
+  },
+  {
+    "id": 5,
+    "nome": "Webcam",
+    "preco": 189.9,
+    "estoque": 5,
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 6,
+    "nome": "Mousepad",
+    "preco": 39.9,
+    "estoque": 20,
+    "categoria": "Periféricos"
+  },
+  {
+    "id": 7,
+    "nome": "Pen Drive 64GB",
+    "preco": 49.9,
+    "estoque": 15,
+    "categoria": "Armazenamento"
+  },
+  {
+    "id": 8,
+    "nome": "SSD 480GB",
+    "preco": 249.9,
+    "estoque": 7,
+    "categoria": "Armazenamento"
+  },
+  {
+    "id": 9,
+    "nome": "SSD 1TB",
+    "preco": 449.9,
+    "estoque": 5,
+    "categoria": "Armazenamento"
+  },
+  {
+    "id": 10,
+    "nome": "HD Externo 1TB",
+    "preco": 329.9,
+    "estoque": 9,
+    "categoria": "Armazenamento"
+  },
+  {
+    "id": 11,
+    "nome": "Memória RAM 8GB",
+    "preco": 139.9,
+    "estoque": 14,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 12,
+    "nome": "Memória RAM 16GB",
+    "preco": 249.9,
+    "estoque": 10,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 13,
+    "nome": "Memória RAM 32GB",
+    "preco": 499.9,
+    "estoque": 4,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 14,
+    "nome": "Processador Ryzen 5",
+    "preco": 899.9,
+    "estoque": 3,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 15,
+    "nome": "Processador Core i5",
+    "preco": 999.9,
+    "estoque": 4,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 16,
+    "nome": "Placa-mãe",
+    "preco": 649.9,
+    "estoque": 5,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 17,
+    "nome": "Placa de Vídeo",
+    "preco": 1899.9,
+    "estoque": 2,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 18,
+    "nome": "Fonte 500W",
+    "preco": 299.9,
+    "estoque": 8,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 19,
+    "nome": "Fonte 650W",
+    "preco": 399.9,
+    "estoque": 6,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 20,
+    "nome": "Gabinete ATX",
+    "preco": 349.9,
+    "estoque": 7,
+    "categoria": "Componentes"
+  },
+  {
+    "id": 21,
+    "nome": "Notebook",
+    "preco": 3299.9,
+    "estoque": 3,
+    "categoria": "Computadores"
+  },
+  {
+    "id": 22,
+    "nome": "Desktop",
+    "preco": 2899.9,
+    "estoque": 2,
+    "categoria": "Computadores"
+  },
+  {
+    "id": 23,
+    "nome": "Tablet",
+    "preco": 1299.9,
+    "estoque": 5,
+    "categoria": "Computadores"
+  },
+  {
+    "id": 24,
+    "nome": "Smartphone",
+    "preco": 1799.9,
+    "estoque": 6,
+    "categoria": "Celulares"
+  },
+  {
+    "id": 25,
+    "nome": "Carregador USB-C",
+    "preco": 79.9,
+    "estoque": 18,
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 26,
+    "nome": "Cabo USB-C",
+    "preco": 29.9,
+    "estoque": 30,
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 27,
+    "nome": "Hub USB",
+    "preco": 89.9,
+    "estoque": 11,
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 28,
+    "nome": "Adaptador HDMI",
+    "preco": 44.9,
+    "estoque": 16,
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 29,
+    "nome": "Cabo HDMI",
+    "preco": 34.9,
+    "estoque": 22,
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 30,
+    "nome": "Suporte para Notebook",
+    "preco": 119.9,
+    "estoque": 9,
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 31,
+    "nome": "Caixa de Som",
+    "preco": 129.9,
+    "estoque": 10,
+    "categoria": "Áudio"
+  },
+  {
+    "id": 32,
+    "nome": "Fone Bluetooth",
+    "preco": 199.9,
+    "estoque": 13,
+    "categoria": "Áudio"
+  },
+  {
+    "id": 33,
+    "nome": "Microfone USB",
+    "preco": 299.9,
+    "estoque": 5,
+    "categoria": "Áudio"
+  },
+  {
+    "id": 34,
+    "nome": "Roteador Wi-Fi",
+    "preco": 249.9,
+    "estoque": 8,
+    "categoria": "Rede"
+  },
+  {
+    "id": 35,
+    "nome": "Repetidor Wi-Fi",
+    "preco": 159.9,
+    "estoque": 12,
+    "categoria": "Rede"
+  },
+  {
+    "id": 36,
+    "nome": "Switch 8 Portas",
+    "preco": 139.9,
+    "estoque": 7,
+    "categoria": "Rede"
+  },
+  {
+    "id": 37,
+    "nome": "Cabo de Rede 5m",
+    "preco": 24.9,
+    "estoque": 25,
+    "categoria": "Rede"
+  },
+  {
+    "id": 38,
+    "nome": "Câmera IP",
+    "preco": 279.9,
+    "estoque": 6,
+    "categoria": "Segurança"
+  },
+  {
+    "id": 39,
+    "nome": "Leitor de Cartão",
+    "preco": 39.9,
+    "estoque": 14,
+    "categoria": "Acessórios"
+  },
+  {
+    "id": 40,
+    "nome": "Cartão MicroSD 128GB",
+    "preco": 69.9,
+    "estoque": 18,
+    "categoria": "Armazenamento"
+  },
+  {
+    "id": 41,
+    "nome": "Nobreak",
+    "preco": 599.9,
+    "estoque": 4,
+    "categoria": "Energia"
+  },
+  {
+    "id": 42,
+    "nome": "Filtro de Linha",
+    "preco": 79.9,
+    "estoque": 15,
+    "categoria": "Energia"
+  },
+  {
+    "id": 43,
+    "nome": "Estabilizador",
+    "preco": 199.9,
+    "estoque": 6,
+    "categoria": "Energia"
+  },
+  {
+    "id": 44,
+    "nome": "Cooler para CPU",
+    "preco": 159.9,
+    "estoque": 9,
+    "categoria": "Refrigeração"
+  },
+  {
+    "id": 45,
+    "nome": "Cooler para Gabinete",
+    "preco": 49.9,
+    "estoque": 20,
+    "categoria": "Refrigeração"
+  },
+  {
+    "id": 46,
+    "nome": "Pasta Térmica",
+    "preco": 29.9,
+    "estoque": 25,
+    "categoria": "Refrigeração"
+  },
+  {
+    "id": 47,
+    "nome": "Mesa Gamer",
+    "preco": 699.9,
+    "estoque": 3,
+    "categoria": "Móveis"
+  },
+  {
+    "id": 48,
+    "nome": "Cadeira Gamer",
+    "preco": 899.9,
+    "estoque": 4,
+    "categoria": "Móveis"
+  },
+  {
+    "id": 49,
+    "nome": "Suporte para Monitor",
+    "preco": 179.9,
+    "estoque": 8,
+    "categoria": "Móveis"
+  },
+  {
+    "id": 50,
+    "nome": "Luminária de Mesa",
+    "preco": 89.9,
+    "estoque": 10,
+    "categoria": "Móveis"
+  },
+  {
+    "id": 51,
+    "nome": "Mouse",
+    "preco": 149,
+    "estoque": 8,
+    "categoria": "Periféricos"
+  }
+]
