@@ -31,6 +31,6 @@ app.use((req, res) => {
 });
 
 app.use((erro, req, res, _next) => {
-    console.erro(`Erro de sistema: ${erro.message}`);
+    console.error(`Erro de sistema: ${erro.message}`);
     res.status(500).json({ erro: "Falha interna do servidor"});
 });
