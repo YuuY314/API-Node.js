@@ -15,3 +15,14 @@ produtoRouter.post('/', (req, res, next) => autenticar(req, res, next), ProdutoC
 produtoRouter.put('/:id', (req, res, next) => autenticar(req, res, next), ProdutoController.atualizar);
 produtoRouter.patch('/:id/imagem', (req, res, next) => autenticar(req, res, next), uploadImagem, ProdutoController.enviarImagem);
 produtoRouter.delete('/:id', (req, res, next) => autenticar(req, res, next), (req, res, next) => autorizarAdmin(req, res, next), ProdutoController.excluir);
+
+export function configurarSegurancaProdutos(middlewareAuth, middlewareAdmin) {
+  // Substitui os middlewares provisórios da Sessão 1 pelos middlewares reais.
+  if(middlewareAuth){
+    autenticar = middlewareAuth;
+  }
+
+  if(middlewareAdmin){
+    autorizarAdmin = middlewareAdmin;
+  }
+}
