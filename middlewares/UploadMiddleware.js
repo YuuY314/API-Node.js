@@ -1,8 +1,7 @@
 import multer from "multer";
 import { randomUUID } from "crypto";
-import { Dirent, mkdirSync } from "fs";
+import { mkdirSync } from "fs";
 import { extname, resolve } from "path";
-import { callbackify } from "util";
 
 // garante que o diretório de uploads exista
 const DIRETORIO_UPLOAD = resolve("uploads/produtos");
@@ -10,6 +9,7 @@ mkdirSync(DIRETORIO_UPLOAD, { recursive: true });
 
 // tipos de arquivos permitidos
 const MIME_TYPES_VALIDOS = ["image/jpeg", "image/png", "image/webp"];
+    
 const storage = multer.diskStorage({
     destination: (req, file, callback) => {
         callback(null, DIRETORIO_UPLOAD);

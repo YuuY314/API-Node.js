@@ -1,50 +1,17 @@
 import express from "express";
+import * as ProdutoController from "../controllers/ProdutoController.js";
+import { uploadImagem } from "../middlewares/UploadMiddleware.js";
 
-export function criarProdutoRoutes({ produtoController }){
-    const router = express.Router();
-    router.get("/", produtoController.listar);
-    router.get("/:id", produtoController.buscar);
-    router.post("/", produtoController.criar);
-    return router;
-}
+// middlewares de autenticação (serão ativados na sessão 2)
+// inicialmente passam direto para não travar a sessão 1
+let autenticar = (_req, _res, next) => next();
+let autorizarAdmin = (_req, _res, next) => next();
 
+export const produtoRouter = express.Router();
 
-// import express from "express";
-// import { resolve } from "node:path";
-// import { criarCatalogoArquivo } from "../catalogo/catalogoArquivo.js";
-
-// const caminhoCatalogo = process.env.CATALOGO_ARQUIVO || resolve(import.meta.dirname, "../data/produtos.json");
-// const catalogo = criarCatalogoArquivo(caminhoCatalogo);
-
-// export const produtoRoutes = express.Router();
-
-// produtoRoutes.get("/", async (req, res, next) => {
-//     try {
-//         const produtos = await catalogo.listar();
-//         res.status(200).json({ sucesso: true, dados: produtos });
-//     } catch (erro) {
-//         next(erro); //envia para o middleware de erro (provisório)
-//     }
-// });
-
-// produtoRoutes.post("/", async (req, res) => {
-//     const { nome, preco, estoque, categoria } = req.body;
-//     const produto = await catalogo.criar({ nome, preco, estoque, categoria });
-//     res.status(201).json({ sucesso: true, dados: produto});
-// });
-
-// produtoRoutes.get("/:id", async (req, res, next) => {
-//     try {
-//         const id = Number(req.params.id);
-//         if(!Number.isInteger(id)){
-//             return res.status(400).json({ erro: "ID deve ser inteiro" });
-//         }
-//         const produto = await catalogo.buscarPorId(id);
-//         res.status(200).json({ sucesso: true, dados: produto });
-//     } catch (erro) {
-//         if(erro.message.includes("não encontrado")){
-//             return res.status(404).json({ erro: erro.message });
-//         }
-//         next(erro);
-//     }
-// });
+produtoRouter.get('/', ProdutoController.listar);
+produtoRouter.get('/:id', ProdutoController.buscarPorId);
+produtoRouter.post('/', (req, res, next) => autenticar(req, res, next), ProdutoController.criar);
+produtoRouter.put('/:id', (req, res, next) => autenticar(req, res, next), ProdutoController.atualizar);
+produtoRouter.patch('/:id/imagem', (req, res, next) => autenticar(req, res, next), uploadImagem, ProdutoController.enviarImagem);
+produtoRouter.delete('/:id', (req, res, next) => autenticar(req, res, next), (req, res, next) => autorizarAdmin(req, res, next), ProdutoController.excluir);
